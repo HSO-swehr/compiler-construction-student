@@ -84,7 +84,7 @@ def importModule(lang: str, kind: Literal['compile', 'interp', 'ast', 'parse']):
         return None
     match kind:
         case "compile":
-            modName = f'compilers.lang_{lang}.{lang}_compiler'
+            modName = f'lang_{lang}.{lang}_compiler'
         case "parse":
             modName = f'parsers.lang_{lang}.{lang}_parser'
         case "interp":
